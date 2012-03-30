@@ -108,7 +108,7 @@ const GLubyte Indices[] = {
         [self setupLayer];        
         [self setupContext];     
         [self setupDepthBuffer];
-        [self setupRenderBuffer];        
+        [self setupRenderBuffer];
         [self setupFrameBuffer];
         [self compileShaders];
         [self setupVBOs];
