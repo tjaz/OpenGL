@@ -37,27 +37,6 @@
 
 }
 
-@property (nonatomic, retain) CAEAGLLayer* _eaglLayer;
-@property (nonatomic, retain) EAGLContext* _context;
-@property (nonatomic) GLuint _colorRenderBuffer;
-@property (nonatomic) GLuint _depthRenderBuffer;
-@property (nonatomic) GLuint _positionSlot;
-@property (nonatomic) GLuint _colorSlot;
-@property (nonatomic) GLuint _projectionUniform;
-@property (nonatomic) GLuint _modelViewUniform;
-
-@property (nonatomic) GLuint _floorTexture;
-@property (nonatomic) GLuint _fishTexture;
-@property (nonatomic) GLuint _textCoordSlot;
-@property (nonatomic) GLuint _textureUniform;
-
-@property (nonatomic) GLuint _vertexBuffer;
-@property (nonatomic) GLuint _indexBuffer;
-@property (nonatomic) GLuint _vertexBuffer2;
-@property (nonatomic) GLuint _indexBuffer2;
-
-@property (nonatomic) float _currentRotation;
-
 // koraki pri postavitvi openGL-a
 + (Class)layerClass;
 - (void)setupLayer;

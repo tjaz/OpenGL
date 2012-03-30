@@ -127,13 +127,6 @@ const GLubyte Indices[] = {
     [super dealloc];
 }
 
-@synthesize _eaglLayer, _context, _colorRenderBuffer, _depthRenderBuffer;
-@synthesize _colorSlot, _positionSlot;
-@synthesize _projectionUniform, _modelViewUniform;
-@synthesize _currentRotation;
-@synthesize _fishTexture, _floorTexture, _textCoordSlot, _textureUniform;
-@synthesize _indexBuffer, _indexBuffer2, _vertexBuffer, _vertexBuffer2;
-
 - (void)setupLayer { // set leyer to opaque
     _eaglLayer = (CAEAGLLayer*) self.layer;
     _eaglLayer.opaque = YES; // by default is opaque set to NO, so we change because of better
