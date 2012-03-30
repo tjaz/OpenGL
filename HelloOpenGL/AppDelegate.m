@@ -10,19 +10,18 @@
 
 @implementation AppDelegate
 
-@synthesize window = _window;
-@synthesize glView=_glView;
+//@synthesize m_window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {   
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    m_window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    m_window.backgroundColor = [UIColor whiteColor];
+    [m_window makeKeyAndVisible];
     
     CGRect screenBounds = [[UIScreen mainScreen] bounds];    
-    self.glView = [[OpenGLView alloc] initWithFrame:screenBounds] /*autorelease]*/;
-    [self.window addSubview:_glView];
+    m_glView = [[OpenGLView alloc] initWithFrame:screenBounds] /*autorelease]*/;
+    [m_window addSubview:m_glView];
     
     return YES;
 }
@@ -67,7 +66,7 @@
 }
 
 - (void) dealloc {
-    [_glView release];
+    [m_glView release];
     [super dealloc];
 }
 

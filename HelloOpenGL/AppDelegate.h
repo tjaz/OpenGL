@@ -10,10 +10,8 @@
 #import "OpenGLView.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
-    OpenGLView* _glView;
+    UIWindow * m_window;
+    OpenGLView * m_glView;
 }
-
-@property (nonatomic, retain) OpenGLView *glView;
-@property (strong, nonatomic) UIWindow *window;
 
 @end
