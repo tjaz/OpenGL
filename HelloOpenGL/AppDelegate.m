@@ -67,8 +67,8 @@
 }
 
 - (void) dealloc {
-    //[_glView release];
-    //[super dealloc];
+    [_glView release];
+    [super dealloc];
 }
 
 @end
